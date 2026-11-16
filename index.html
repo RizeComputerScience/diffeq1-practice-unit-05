@@ -2863,7 +2863,7 @@ var PROBLEMS = [
           ['e^(t)(2sin(5t) - cos(5t))', 'The exponential is `e^(αt)` with `α = −1`.']],
         hints: ['Put `C_1 = −1` and `C_2 = 2` into `y = e^(−t)(C_1 cos 5t + C_2 sin 5t)`.'],
         why: 'Check: `y(0) = −1`, and `y′(0) = −C_1 + 5C_2 = 1 + 10 = 11`.' },
-      { lead: 'The solution oscillates and dies out, because `α = −1 < 0`. Find the period of the oscillation, exactly or to three decimal places.', ask: '"period" =', num: true, ans: '2pi/5', tol: 0.0051,
+      { lead: 'The solution oscillates and dies out, because `α = −1 < 0`. Find the period of the cosine and sine factor, exactly or to three decimal places.', ask: '"period" =', num: true, ans: '2pi/5', tol: 0.0051,
         closeMsg: 'Close. Keep three decimal places, with `π ≈ 3.1416`.', sol: ['`"period" = F{2π}{5} ≈ 1.257`'],
         wrongs: [[['2pi', '6.283', '6.28'], 'Divide `2π` by `β = 5`: the cosine `cos 5t` repeats each time `5t` grows by `2π`.'],
           [['5/(2pi)', '0.796', '0.8'], 'That is the number of swings per unit of time. The period is its reciprocal, `F{2π}{β}`.'],
